@@ -29,4 +29,10 @@ users
 | 1  | Handika  | handika@email.com |
 | 2  | Budi     | budi@email.com    |
 +----+----------+-------------------+
-Nanti tabel-tabel tersebut bisa saling berhubungan.
+Nanti tabel-tabel tersebut bisa saling berhubungan. Sebagai contoh:
+users
+  │
+  │ user_id
+  ↓
+orders
+itulah alasannya disebut relational. **Sedangkan NoSQL** menggunakan pendekatan yang berbeda. Contohnya MongoDB. Roadmap kamu memang meminta kita memahami perbedaan RDBMS vs NoSQL pada hari pertama.
