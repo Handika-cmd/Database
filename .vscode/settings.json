@@ -7,12 +7,9 @@
             },
             "ssh": "Disabled",
             "previewLimit": 50,
-            "server": "127.0.0.1",
             "port": 3306,
             "driver": "MySQL",
             "name": "Docker mysql",
-            "username": "root",
-            "password": "admin123",
             "database": "Data_Mahasiswa"
         }
     ]
