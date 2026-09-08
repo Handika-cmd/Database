@@ -8,6 +8,7 @@ DROP TABLE
 praktik langsung
 
 **Panduan Menggunakan/belajar database di vscode**
+tools ini semua ada di vscode ekstensi silahkan cari sesuai yang di bawah ini ya:
 1. install ekstensi SQLtools lisensi microsoft
 2. install mysqltools
 3. masukan ip, username, databse dll
