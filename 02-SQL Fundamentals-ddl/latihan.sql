@@ -3,3 +3,15 @@ CREATE TABLE Siswa(
     nama VARCHAR(100),
     kelas VARCHAR(100)
 );
+
+DROP TABLE Siswa;
+
+SHOW TABLES;
+
+DROP TABLE siswa;
+
+SHOW TABLES;
+
+DROP TABLE mahasiswa;
+
+SHOW TABLES;
