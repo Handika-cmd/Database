@@ -1,8 +1,5 @@
 CREATE TABLE Siswa(
-    nama VARCHAR,
-    kelas INT,
+    id INT,
+    nama VARCHAR(100),
+    kelas VARCHAR(100)
 );
-
--- Menambahkan kolom: Gunakan ALTER TABLE ...ADD
-ALTER TABLE siswa
-    ADD email VARCHAR(100);
