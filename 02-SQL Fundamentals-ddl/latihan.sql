@@ -4,11 +4,19 @@ CREATE TABLE Mahasiswa(
     jurusan VARCHAR(100)
 );
 
+USE data_mahasiswa;
+SELECT * FROM mahasiswa;
+DESCRIBE mahasiswa;
 SHOW TABLES;
+ALTER TABLE mahasiswa
+ADD passwoard VARCHAR(50) AFTER jurusan;
+ALTER TABLE mahasiswa
+ADD Uvinersitas VARCHAR(50) AFTER jurusan;
+DROP TABLE mahasiswa;
+INSERT INTO mahasiswa(nama, jurusan, alamat, email)
+VALUES ('Handika Saputra', 'Pendidikan Agama Islam', 'Kota Tangerang','handikasaputra484@gmail.com')
 
-DROP TABLE Mahasiswa;
-INSERT INTO Mahasiswa(nama, jurusan, kampus, email)
-VALUES ('Handika Saputra', 'Pendidikan Agama Islam', 'Universitas Cendekia Abditama','handikasaputra484@gmail.com')
+DELETE FROM mahasiswa WHERE id =1;
 
 -- Buat Tabel users
 CREATE TABLE users (
