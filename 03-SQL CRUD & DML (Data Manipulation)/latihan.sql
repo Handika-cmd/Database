@@ -1,6 +1,8 @@
 --  INSERT — Masukkan Data
 USE bootcamp_db;
 
+SELECT * FROM products;
+
 -- Data users
 INSERT INTO users (full_name, email, password_hash, phone) VALUES
 ('Budi Santoso', 'budi@email.com', 'hash123', '08123456789'),
