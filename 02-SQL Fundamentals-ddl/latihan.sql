@@ -1,12 +1,15 @@
 CREATE DATABASE belajar;
 USE belajar;
 
+-- Liat tabel
+SHOW TABLES;
 -- liat data tabel
 SELECT * FROM users;
 SELECT * FROM products;
 
 -- mengubah struktur dari tabel
-ALTER TABLE users CHANGE nama name VARCHAR(100);
+ALTER TABLE users CHANGE passwoard paswoard VARCHAR(100) NOT NULL;
+ALTER TABLE users ADD passwoard VARCHAR(100) AFTER nama;
 -- Membuat tabel users
 CREATE TABLE users(
     id INT AUTO_INCREMENT PRIMARY KEY,
