@@ -48,3 +48,6 @@ DELETE FROM users WHERE id = 3;
 
 -- Cek lagi isi tabel
 SELECT * FROM users;
+
+-- Kalau tabel sudah ada juga dan mau mulai dari nol, hapus dulu:
+DROP TABLE IF EXISTS users, products;
