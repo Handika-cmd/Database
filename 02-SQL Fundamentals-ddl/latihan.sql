@@ -30,3 +30,7 @@ CREATE TABLE products (
     category VARCHAR(50),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Kalau tabel sudah ada juga dan mau mulai dari nol, hapus dulu:
+DROP TABLE IF EXISTS users, products;
+Lalu jalankan ulang query CREATE TABLE di atas.
