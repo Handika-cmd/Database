@@ -1,5 +1,12 @@
 # Target Hari 3
 **DML (Data Manipulation Language) = perintah untuk isi data (bukan struktur lagi).**
+**DML itu intinya untuk memanipulasi data di dalam tabel.**
+Singkatan CRUD yang sering dengar di programming itu asalnya dari sini:
+ * Create = INSERT
+ * Read = SELECT
+ * Update = UPDATE
+ * Delete = DELETE
+
 | Perintah | Fungsi                   |
 | -------- | ------------------------ |
 | `INSERT` | Masukkan data baru       |

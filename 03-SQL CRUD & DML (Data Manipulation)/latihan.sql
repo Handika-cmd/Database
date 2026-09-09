@@ -1,52 +1,17 @@
---  INSERT — Masukkan Data
-USE bootcamp_db;
+-- gunakan database belajar
+use belajar;
 
+-- melihat struktur tabel
+SELECT * FROM users;
 SELECT * FROM products;
 
--- Data users
-INSERT INTO users (full_name, email, password_hash, phone) VALUES
-('Budi Santoso', 'budi@email.com', 'hash123', '08123456789'),
-('Ani Wijaya', 'ani@email.com', 'hash456', '08234567890'),
-('Citra Lestari', 'citra@email.com', 'hash789', '08345678901');
+--  INSERT (Create Data)
+-- Masukkan 2 data ke tabel users
+INSERT INTO users (nama, paswoard, email) VALUES
+    ('Handika Saputra', '780378', 'handikasaputra484@gmail.com'),
+    ('Ririn Dwi Aryanti', '999012', 'ririndwiaryanti483@gmail.com');
 
--- Data products
-INSERT INTO products (name, description, price, stock, category) VALUES
-('Laptop ASUS', 'Laptop gaming ringan', 8500000.00, 10, 'Elektronik'),
-('Mouse Logitech', 'Mouse wireless silent', 250000.00, 50, 'Aksesoris'),
-('Keyboard Mechanical', 'Switch blue, RGB', 450000.00, 30, 'Aksesoris');
-
--- SELECT — Baca Data
--- Lihat semua users
-SELECT * FROM users;
-
--- Lihat semua products
-SELECT * FROM products;
-
--- Lihat nama & harga saja
-SELECT name, price FROM products;
-
--- Lihat produk yang stoknya di atas 20
-SELECT * FROM products WHERE stock > 20;
-
--- Urutkan harga termurah ke termahal
-SELECT * FROM products ORDER BY price ASC;
-
--- UPDATE — Ubah Data
--- Ubah nomor telepon Budi
-UPDATE users 
-SET phone = '08111111111' 
-WHERE id = 1;
-
--- Naikkan harga laptop
-UPDATE products 
-SET price = 9000000.00 
-WHERE id = 1;
--- Jangan lupa WHERE! Kalau lupa, semua data ke-update.
-
-
--- DELETE — Hapus Data
--- Hapus user Citra
-DELETE FROM users WHERE id = 3;
-
--- Cek lagi isi tabel
-SELECT * FROM users;
+-- -- Masukkan 2 data ke tabel products
+INSERT INTO products (nama_barang, deskripsi, harga, stok)VALUES
+    ('Laptop ASUS TUF', 'Laptop Gaming entry level', '12000000.00', '10'),
+    ('Laptop ACER NITRO', 'Laptop Gaming entry level', '17000000.00', '20');
