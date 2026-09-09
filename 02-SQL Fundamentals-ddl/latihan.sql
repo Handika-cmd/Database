@@ -1,7 +1,12 @@
 CREATE DATABASE belajar;
 USE belajar;
+
+-- liat data tabel
 SELECT * FROM users;
 SELECT * FROM products;
+
+-- mengubah struktur dari tabel
+ALTER TABLE users CHANGE nama name VARCHAR(100);
 -- Membuat tabel users
 CREATE TABLE users(
     id INT AUTO_INCREMENT PRIMARY KEY,
